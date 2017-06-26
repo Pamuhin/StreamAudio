@@ -33,6 +33,7 @@ Sound::Sound(QWidget *parent) :
 //dfgdf
 
     audioOutputs = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
+    audioOutputs = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
     foreach (const QAudioDeviceInfo &deviceInfo, audioOutputs){
         ui->logTextEdit->append( "Output device name: " + deviceInfo.deviceName());
         ui->audioOutputsComboBox->addItem(deviceInfo.deviceName());
