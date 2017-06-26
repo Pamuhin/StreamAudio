@@ -31,7 +31,7 @@ Sound::Sound(QWidget *parent) :
     tel = NULL;
     mic = NULL;
 //dfgdf
-
+//audioOutputs
     audioOutputs = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
     audioOutputs = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
     foreach (const QAudioDeviceInfo &deviceInfo, audioOutputs){
